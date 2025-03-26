@@ -1,0 +1,23 @@
+---
+import Menu from '../components/MenuMain.astro'
+import Hamburger from "../components/Hamburger.astro"
+import Footer from '../components/Footer.astro'
+import '../styles/global.css'
+---
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>title here</title>
+    </head>
+    <body>
+        <div class="wrapper">
+        <!-- <Menu /> -->
+        <Hamburger />
+        <main>
+        <slot />
+        </main>
+        <Footer />
+        </div>
+    </body>
+</html>

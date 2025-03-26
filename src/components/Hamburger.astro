@@ -1,0 +1,22 @@
+---
+import MainMenu from "./MenuMain.astro"
+import "../styles/hamburger.css"
+---
+
+<nav class="menu-container menu-main">
+    <div class="menu-toggler">
+        <div class="hamburger"></div>
+    </div>
+    <MainMenu />
+</nav>
+
+<script>
+    const toggler = document.getElementsByClassName("menu-toggler")[0];
+toggler.addEventListener("click", () => toggler.classList.toggle("open"));
+
+// CLOSE EXPANDED IF RESIZED UP
+const closeExpanded = () => {
+      if (window.visualViewport.width>799) {toggler.classList.remove("open");}
+   }
+window.addEventListener('resize', closeExpanded);
+</script>
