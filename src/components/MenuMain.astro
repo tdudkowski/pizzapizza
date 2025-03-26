@@ -4,10 +4,10 @@ const currentPath = pathname.slice(1); // remove the first "/"
 ---
    <ul class="menu-list">
         <li><a class={currentPath === "" ? "active" : ""} href="/">PizzaPizza</a></li>
-        <li><a class={currentPath === "o_nas" && "o_nas/" ? "active" : ""} href="/o_nas">Lokal</a></li>
-        <li><a class={currentPath === "pizza" && "pizza/" ? "active" : ""} href="/pizza">Pizza</a></li>
-        <li><a class={currentPath === "lokalizacja" && "lokalizacja/" ? "active" : ""} href="/lokalizacja">Lokalizacja</a></li>
-        <li><a class={currentPath === "menu" && "menu/" ? "active" : ""} href="/menu">Menu</a></li>
-        <li><a class={currentPath === "dowoz" && "dowoz/" ? "active" : ""} href="/dowoz">Dowóz</a></li>
-        <li><a class={currentPath === "english" && "english/" ? "active" : ""} href="/english">English</a></li>
+        <li><a class={currentPath === "o_nas" || "o_nas/" ? "active" : ""} href="/o_nas">Lokal</a></li>
+        <li><a class={currentPath === "pizza" || "pizza/" ? "active" : ""} href="/pizza">Pizza</a></li>
+        <li><a class={currentPath === "lokalizacja" || "lokalizacja/" ? "active" : ""} href="/lokalizacja">Lokalizacja</a></li>
+        <li><a class={currentPath === "menu" || "menu/" ? "active" : ""} href="/menu">Menu</a></li>
+        <li><a class={currentPath === "dowoz" || "dowoz/" ? "active" : ""} href="/dowoz">Dowóz</a></li>
+        <li><a class={currentPath === "english" || "english/" ? "active" : ""} href="/english">English</a></li>
     </ul>
