@@ -2,13 +2,23 @@ body {margin: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet M
 
 ul {margin: 0; list-style-type: none;}
 
-.wrapper {display: flex; flex-direction: column; margin: 0 auto; max-width: 1300px; min-height: 100vh;}
+.wrapper {display: flex; flex-direction: column; margin: 0 auto; max-width: 1300px; min-height: 100vh; background: url('../assets/logo-small.png') no-repeat; background-position: -20px -20px;}
 main {flex: 1; padding: 2rem;}
+main {padding-top: 100px;}
+.logo-nav  {display: none;}
 .menu-main ul {display: flex; flex-direction: column;}
 .menu-main ul a {display: block; padding: 1rem;}
 
 @media (min-width: 800px) {
+    .logo-nav {display: block; width: 250px; height: 200px; background: url('../assets/logo-small.png') no-repeat; background-position: -25px -25px;}
+    .menu-main .logo-nav a {display: block; width: 100%; height: 100%; color: transparent;}
+    .menu-main {display: flex; justify-content: flex-end; }
     .menu-main ul {flex-direction: row;}
+    .menu-main ul li:first-of-type {display: none;}
+}
+
+@media (min-width: 900px) {
+    .menu-main ul {padding-left: 10rem;}
 }
 
 /* PRESENTATION */
@@ -26,7 +36,7 @@ a.active {pointer-events: none; color: #aa6; border-bottom: 3px solid #aa6;}
 footer {background-color: #220; color: #ffc;}
 
 @media (min-width: 800px) {
-    .menu-main {margin-left: 7rem;}
+    .wrapper {background-image: none;}
     .menu-main a {background-color: transparent; color: #331;}
     a.active {color: #aa6; border-bottom: 3px solid #aa6;}
 }
