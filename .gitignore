@@ -4,6 +4,7 @@ dist
 archiv
 node_modules
 log.md
+src/archive
 
 # other
 .cache
